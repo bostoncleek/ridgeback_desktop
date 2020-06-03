@@ -6,10 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /RobotModel1
         - /TF1/Frames1
         - /TF1/Tree1
-        - /InteractiveMarkers1
       Splitter Ratio: 0.6529411673545837
     Tree Height: 633
   - Class: rviz/Selection
@@ -58,6 +56,11 @@ Visualization Manager:
       Collision Enabled: false
       Enabled: true
       Links:
+        /front_laser:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         All Links Enabled: true
         Expand Joint Details: false
         Expand Link Details: false
@@ -78,11 +81,6 @@ Visualization Manager:
           Show Trail: false
           Value: true
         front_cover_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        front_laser:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -188,7 +186,7 @@ Visualization Manager:
   Global Options:
     Background Color: 48; 48; 48
     Default Light: true
-    Fixed Frame: base_link
+    Fixed Frame: odom
     Frame Rate: 30
   Name: root
   Tools:
